@@ -1,0 +1,70 @@
+header {
+    background: linear-gradient(135deg, #FF4081, #6d8d9b, #FFEC19, #2196F3);
+    background-size: 400% 400%;
+    animation: gradientShift 15s ease infinite;
+    color: #ffffff;
+    padding: 50px 40px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    font-family: 'Poppins', sans-serif;
+    border: 3px solid #FFEC19;
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+header h1 {
+    margin: 0;
+    font-size: 4em;
+    font-weight: 900;
+    color: #ffffff;
+    text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.5);
+    letter-spacing: 4px;
+    animation: textGlitch 2s infinite;
+}
+
+@keyframes textGlitch {
+    0% { text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.5); }
+    20% { text-shadow: -3px -3px 7px rgba(255, 64, 129, 0.5); }
+    40% { text-shadow: 3px -3px 7px rgba(109, 141, 155, 0.5); }
+    60% { text-shadow: -3px 3px 7px rgba(34, 193, 195, 0.5); }
+    80% { text-shadow: 3px 3px 7px rgba(253, 187, 45, 0.5); }
+    100% { text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.5); }
+}
+
+header .logo {
+    max-width: 150px;
+    margin: 0 40px;
+}
+
+header .logo img {
+    filter: none;
+    border: none;
+}
+
+@keyframes logoPulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+h1, h2 {
+    color: #FF4081;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    animation: headerTextGlow 3s ease-in-out infinite alternate;
+}
+
+@keyframes headerTextGlow {
+    from { text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); }
+    to { text-shadow: 0 0 20px rgba(255, 64, 129, 1), 0 0 30px rgba(109, 141, 155, 1); }
+}
